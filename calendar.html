@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset='utf-8' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+  <script src="https://eventsapi.onrender.com/api"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="calander.css">  
+  <title>document</title>
+</head>
+
+<body>
+
+  
+  <div class="oergenizeEvents">
+    <div id="add">
+      <button id ="click"onclick="addEvent()">Add event</button></br>
+      <br>
+    <input id ="click" type="text" placeholder="enter title" id="title">
+    <input id ="click" type="date" id="date"></br>   
+    </div><br>
+    <div id="delete">
+    <button   id ="click" onclick="deleteEvent()">delete event</button></br>
+     <ul id="myList"></ul>
+    </div>
+    <div id="update">
+    <button  id ="click" onclick="Update()">Update event</button></br>
+    <ul id="myList2"></ul>
+    </div>
+  </div>
+    <div id='calendar'style="color: deeppink; "></div>
+  <script src="calendar.js"></script>
+</body>
+
+</html>
